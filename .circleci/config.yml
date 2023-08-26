@@ -10,9 +10,9 @@ jobs:
       - image: cimg/node:20.5.1
     steps:
       - checkout
-      - run: node --version
+      - run:
           name: Install dependencies
           command: npm install
-      - run: 
+      - run:
           name: Run Tests
           command: npm run test
